@@ -20,9 +20,17 @@ import androidx.activity.compose.setContent
 import androidx.appcompat.app.AppCompatActivity
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Surface
-import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.navigation.NavType
+import androidx.navigation.compose.NavHost
+import androidx.navigation.compose.composable
+import androidx.navigation.compose.navArgument
+import androidx.navigation.compose.navigate
+import androidx.navigation.compose.rememberNavController
+import com.example.androiddevchallenge.model.SampleData
+import com.example.androiddevchallenge.ui.DetailScreen
+import com.example.androiddevchallenge.ui.OverviewScreen
 import com.example.androiddevchallenge.ui.theme.MyTheme
 
 class MainActivity : AppCompatActivity() {
@@ -39,8 +47,33 @@ class MainActivity : AppCompatActivity() {
 // Start building your app here!
 @Composable
 fun MyApp() {
+    val navController = rememberNavController()
+
+    // use sample data because this is an UI showcase project
+    val puppies = SampleData.puppies
+
     Surface(color = MaterialTheme.colors.background) {
-        Text(text = "Ready... Set... GO!")
+        NavHost(navController = navController, startDestination = "overview") {
+            composable("overview") {
+                OverviewScreen(
+                    puppies,
+                    onPuppySelected = { puppyId ->
+                        navController.navigate("detail/$puppyId")
+                    }
+                )
+            }
+            composable(
+                "detail/{puppyId}",
+                arguments = listOf(navArgument("puppyId") { type = NavType.IntType })
+            ) { backStackEntry ->
+                val puppy = puppies.find {
+                    it.id == backStackEntry.arguments?.get("puppyId") ?: -1
+                }
+                if (puppy != null) {
+                    DetailScreen(puppy)
+                }
+            }
+        }
     }
 }
 

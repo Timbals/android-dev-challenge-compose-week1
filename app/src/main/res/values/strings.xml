@@ -10,4 +10,11 @@
       the License.
       -->
     <string name="app_name">AndroidDevChallenge</string>
+    <string name="not_implemented">not implemented</string>
+    <plurals name="puppy_age">
+        <item quantity="one">%d month old</item>
+        <item quantity="other">%d months old</item>
+    </plurals>
+    <string name="puppy_image_description">image for %s</string>
+    <string name="puppy_adopt">Adopt %s</string>
 </resources>
