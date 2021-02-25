@@ -9,7 +9,8 @@
       or implied. See the License for the specific language governing permissions and limitations under
       the License.
       -->
-    <string name="app_name">AndroidDevChallenge</string>
+    <string name="app_name">Puppy Adoption</string>
+    <string name="paw_description">paw icon</string>
     <string name="not_implemented">not implemented</string>
     <plurals name="puppy_age">
         <item quantity="one">%d month old</item>
@@ -17,4 +18,6 @@
     </plurals>
     <string name="puppy_image_description">image for %s</string>
     <string name="puppy_adopt">Adopt %s</string>
+    <string name="gender_male">male</string>
+    <string name="gender_female">female</string>
 </resources>

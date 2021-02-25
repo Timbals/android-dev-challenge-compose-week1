@@ -12,7 +12,7 @@
 ## :bulb: Motivation and Context
 <!--- Optionally point readers to interesting parts of your submission. -->
 <!--- What are you especially proud of? -->
-
+- dynamic theming of cards based on image colors
 
 ## :camera_flash: Screenshots
 <!-- You can add more screenshots here if you like -->
