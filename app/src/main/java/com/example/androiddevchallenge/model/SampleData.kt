@@ -52,6 +52,38 @@ object SampleData {
             Gender.MALE,
             "Shih Tzu",
             R.drawable.puppy4 // https://www.pexels.com/photo/adult-white-and-brown-shih-tzu-3361739/
+        ),
+        Puppy(
+            id++,
+            "Ollie",
+            5,
+            Gender.MALE,
+            "Labrador",
+            R.drawable.puppy5 // https://www.pexels.com/photo/brown-puppy-on-concrete-path-1790444/
+        ),
+        Puppy(
+            id++,
+            "Ella",
+            1,
+            Gender.FEMALE,
+            "Corgi",
+            R.drawable.puppy6 // https://www.pexels.com/photo/high-angle-photo-of-a-corgi-looking-upwards-2664417/
+        ),
+        Puppy(
+            id++,
+            "Cocoa",
+            3,
+            Gender.FEMALE,
+            "Pomeranian",
+            R.drawable.puppy7 // https://www.pexels.com/photo/brown-pomeranian-puppy-on-grey-concrete-floor-3687770/
+        ),
+        Puppy(
+            id++,
+            "Emma",
+            4,
+            Gender.FEMALE,
+            "Pug",
+            R.drawable.puppy8 // https://www.pexels.com/photo/fawn-pug-resting-on-floor-1289557/
         )
     )
 }

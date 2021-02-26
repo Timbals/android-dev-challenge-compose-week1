@@ -51,9 +51,11 @@ fun DetailScreenPreview() {
 fun DetailScreen(puppy: Puppy) {
     Scaffold(
         topBar = {
-            TopAppBar(title = {
-                Text("Details about ${puppy.name}")
-            })
+            TopAppBar(
+                title = {
+                    Text("Details about ${puppy.name}")
+                }
+            )
         },
         floatingActionButtonPosition = FabPosition.Center,
         floatingActionButton = {
