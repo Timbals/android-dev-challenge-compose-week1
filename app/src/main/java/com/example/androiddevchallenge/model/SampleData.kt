@@ -55,6 +55,14 @@ object SampleData {
         ),
         Puppy(
             id++,
+            "Emma",
+            4,
+            Gender.FEMALE,
+            "Pug",
+            R.drawable.puppy8 // https://www.pexels.com/photo/fawn-pug-resting-on-floor-1289557/
+        ),
+        Puppy(
+            id++,
             "Ollie",
             5,
             Gender.MALE,
@@ -76,14 +84,6 @@ object SampleData {
             Gender.FEMALE,
             "Pomeranian",
             R.drawable.puppy7 // https://www.pexels.com/photo/brown-pomeranian-puppy-on-grey-concrete-floor-3687770/
-        ),
-        Puppy(
-            id++,
-            "Emma",
-            4,
-            Gender.FEMALE,
-            "Pug",
-            R.drawable.puppy8 // https://www.pexels.com/photo/fawn-pug-resting-on-floor-1289557/
         )
     )
 }
