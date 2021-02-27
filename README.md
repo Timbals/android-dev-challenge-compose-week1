@@ -1,21 +1,23 @@
-# Put title of your app here
+# Puppy Adoption UI Showcase
 
-<!--- Replace <OWNER> with your Github Username and <REPOSITORY> with the name of your repository. -->
-<!--- You can find both of these in the url bar when you open your repository in github. -->
 ![Workflow result](https://github.com/Timbals/android-dev-challenge-compose-week1/workflows/Check/badge.svg)
 
-
 ## :scroll: Description
-<!--- Describe your app in one or two sentences -->
+This app is an UI showcase project for the [#AndroidDevChallenge](https://developer.android.com/dev-challenge).
+It includes two screens
+- Overview Screen
+    - shows an overview over available puppies
+- Detail Screen
+    - shows more details for a selected puppy
 
+(this is an UI only project which means there is not functional)
 
 ## :bulb: Motivation and Context
-<!--- Optionally point readers to interesting parts of your submission. -->
-<!--- What are you especially proud of? -->
 - dynamic theming of cards based on image colors
+- modern UI using [Jetpack Compose](https://developer.android.com/jetpack/compose)
+- written in [Kotlin](https://kotlinlang.org/)
 
 ## :camera_flash: Screenshots
-<!-- You can add more screenshots here if you like -->
 <img src="/results/screenshot_1.png" width="260">&emsp;<img src="/results/screenshot_2.png" width="260">
 
 ## License
@@ -40,3 +42,8 @@ limitations under the License.
 - https://www.pexels.com/photo/adorable-little-dachshund-puppy-on-comfy-couch-4490129/
 - https://www.pexels.com/photo/black-and-white-border-collie-puppy-3908806/
 - https://www.pexels.com/photo/adult-white-and-brown-shih-tzu-3361739/
+- https://www.pexels.com/photo/brown-puppy-on-concrete-path-1790444/
+- https://www.pexels.com/photo/high-angle-photo-of-a-corgi-looking-upwards-2664417/
+- https://www.pexels.com/photo/brown-pomeranian-puppy-on-grey-concrete-floor-3687770/
+- https://www.pexels.com/photo/fawn-pug-resting-on-floor-1289557/
+
